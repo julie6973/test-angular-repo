@@ -12,6 +12,8 @@ phases:
     commands:
       - ng build -c production
       - echo "Build Completed."
+      - echo "=== dist folder structure ==="
+      - ls -R dist
     
     finally:
       - echo This is the finally block execution!
